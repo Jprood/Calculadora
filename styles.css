@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+}
+
+body{
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3em;
+}
+
+#calc{
+    width: 400px;
+    padding: .5em;
+    background-color: #c4c4c4;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+}
+
+#calc h3{
+    font-size: .8em;
+    font-weight: 300;
+    color: #666;
+}
+
+#ope{
+    text-align: right;
+}
+
+
+#ope_ant, 
+#ope_atual{
+    min-height: 1.6em;
+    overflow-wrap: break-word;
+    padding: 0.2em;
+}
+
+#ope_ant{
+    color: #777;  
+}
+
+#ope_atual{
+    font-size: 3em;
+    font-weight: 500;
+}
+
+#botoes{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 3px;
+}
+
+#botoes button{
+    border: 1px solid transparent;
+    border-radius: 0;
+    height: 4em;
+    font-size: 1.2em;
+    background-color: #dbdbdb;
+    cursor: pointer;
+}
+
+#botoes .numero{
+    background-color: #f3f3f3;
+}
+
+#botoes button:hover{
+    background-color: #ababab;
+    border-color: #999;
+}
+
+#botoes #igual{
+    grid-column: span 2;
+    background-color: #75a5cb;
+}
+
+#botoes #igual:hover{
+    background-color: #3a91d8;
+}
