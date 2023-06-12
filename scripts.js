@@ -21,7 +21,7 @@ class Calculator {
 
     // processar operações da calculadora
     processOperation(operation){
-        // check if current is empty
+        // verifique se o calculo atual está vazia
         if(this.currentOperationText.innerText === "" && operation !== "C") {
             if(this.previousOperationText.innerText !== "") {
                 //mudar operação
@@ -81,13 +81,13 @@ class Calculator {
                 operationValue = current
             }
 
-            //add curret value to previous
+            //adicionar valor atual ao anterior
             this.previousOperationText.innerText = `${operationValue} ${operation}`
             this.currentOperationText.innerText = "";
         }
     }
 
-    // change math operation
+    // alterar operação matemática
     changeOperation(operation) {
 
         const mathOprations = ["*", "/", "+", "-"]
